@@ -1,0 +1,27 @@
+{
+  "name": "cypress-testing-framework",
+  "version": "1.0.0",
+  "description": "Complete end to end testing framework based on Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llatinov/cypress-testing-framework.git"
+  },
+  "keywords": [
+    "Cypress",
+    "testing",
+    "framework"
+  ],
+  "author": "Lyudmil Latinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llatinov/cypress-testing-framework/issues"
+  },
+  "homepage": "https://github.com/llatinov/cypress-testing-framework#readme",
+  "devDependencies": {
+    "cypress": "^3.2.0"
+  }
+}
