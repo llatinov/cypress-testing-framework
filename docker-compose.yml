@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  nodejs-rest-stub:
+    image: llatinov/nodejs-rest-stub
+    ports:
+      - '9000:3000'
