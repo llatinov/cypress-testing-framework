@@ -3,9 +3,9 @@ import Header from './common/header';
 
 function App(props) {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <body>{props.children}</body>
+      <section className="m-3">{props.children}</section>
     </div>
   );
 }
