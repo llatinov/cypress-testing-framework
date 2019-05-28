@@ -1,24 +1,26 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
-import logo from './logo.svg';
 
 export default function Header() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <nav>
+    <nav>
+      <div className="jumbotron">
         <IndexLink to="/" activeClassName="active">
           Home
         </IndexLink>
         {' | '}
         <Link to="/persons" activeClassName="active">
-          Persons
+          List Persons
+        </Link>
+        {' | '}
+        <Link to="/add" activeClassName="active">
+          Add Person
         </Link>
         {' | '}
         <Link to="/about" activeClassName="active">
           About
         </Link>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }
