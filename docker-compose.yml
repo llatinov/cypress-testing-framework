@@ -1,7 +1,14 @@
 version: '3'
 
 services:
-  nodejs-rest-stub:
+  backend:
     image: llatinov/nodejs-rest-stub
     ports:
       - '9000:3000'
+  frontend:
+    build: .
+    command: yarn start
+    environment:
+      - REACT_APP_API_URL=http://localhost:9000
+    ports:
+      - '3030:3000'
