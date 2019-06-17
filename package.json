@@ -8,6 +8,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
+    "cypress:eslint": "eslint ./cypress",
     "cypress:examples:open": "cypress open --config integrationFolder=./cypress/examples",
     "cypress:examples:run": "cypress run --config integrationFolder=./cypress/examples,video=false"
   },
@@ -44,6 +45,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
+    "eslint": "^5.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^3.0.0",
