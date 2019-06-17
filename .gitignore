@@ -1,1 +1,3 @@
 node_modules
+cypress/logs/*
+cypress/screenshots/*

@@ -8,7 +8,8 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open"
+    "cypress:examples:open": "cypress open --config integrationFolder=./cypress/examples",
+    "cypress:examples:run": "cypress run --config integrationFolder=./cypress/examples,video=false"
   },
   "repository": {
     "type": "git",
@@ -50,7 +51,7 @@
     "toastr": "^2.1.4"
   },
   "devDependencies": {
-    "cypress": "^3.2.0",
+    "cypress": "^3.3.1",
     "istanbul-instrumenter-loader": "^3.0.1",
     "react-app-rewired": "^2.1.3"
   }
