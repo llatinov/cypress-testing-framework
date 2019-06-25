@@ -10,7 +10,11 @@
     "eject": "react-scripts eject",
     "cypress:eslint": "eslint ./cypress",
     "cypress:examples:open": "cypress open --config integrationFolder=./cypress/examples",
-    "cypress:examples:run": "cypress run --config integrationFolder=./cypress/examples,video=false"
+    "cypress:examples:run": "cypress run --config integrationFolder=./cypress/examples,video=false",
+    "cypress:open": "cypress open --config integrationFolder=./cypress/tests",
+    "cypress:run": "cypress run --config integrationFolder=./cypress/tests,video=false",
+    "cypress:retry": "node cypress/support/npm/cypress_retry_failed.js",
+    "cypress:report": "node cypress/support/npm/cypress_merge_results.js"
   },
   "repository": {
     "type": "git",
@@ -32,9 +36,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      ">0.2%"
     ],
     "development": [
       "last 1 chrome version",
@@ -55,6 +57,8 @@
   "devDependencies": {
     "cypress": "^3.3.1",
     "istanbul-instrumenter-loader": "^3.0.1",
-    "react-app-rewired": "^2.1.3"
+    "junit-report-merger": "^0.0.6",
+    "react-app-rewired": "^2.1.3",
+    "xml-js": "^1.6.11"
   }
 }

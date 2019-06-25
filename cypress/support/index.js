@@ -12,9 +12,14 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
 // Import commands.js using ES2015 syntax:
 import './commands';
+import './core/cypress_promisify';
+import './core/cypress_logging';
+import './core/cypress_code_coverage';
+import './commands_navigation';
+import './commands_api';
+import './commands_assert';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
