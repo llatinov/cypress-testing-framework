@@ -9,6 +9,6 @@ services:
     build: .
     command: yarn start
     environment:
-      - REACT_APP_API_URL=http://localhost:9000
+      - REACT_APP_API_URL=${API_URL:-http://localhost:9000}
     ports:
       - '3030:3000'

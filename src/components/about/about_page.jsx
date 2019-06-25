@@ -13,7 +13,9 @@ export default function HomePage() {
 
   return (
     <div>
-      <p>This is the about page. Current API version is: {data}</p>
+      <p>Welcome to the about page.</p>
+      <p>Current API version is: {data}</p>
+      <p>Current time is: {new Date().toISOString()}</p>
     </div>
   );
 }
