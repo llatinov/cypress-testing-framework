@@ -5,10 +5,19 @@ services:
     image: llatinov/nodejs-rest-stub
     ports:
       - '9000:3000'
-  frontend:
-    build: .
-    command: yarn start
+  frontend-nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile-NGINX
     environment:
-      - REACT_APP_API_URL=${API_URL:-http://localhost:9000}
+      - REACT_APP_API_URL=${API_URL:-http://backend:9000}
     ports:
       - '3030:3000'
+  frontend-caddy:
+    build:
+      context: .
+      dockerfile: Dockerfile-Caddy
+    environment:
+      - REACT_APP_API_URL=${API_URL:-http://backend:9000}
+    ports:
+      - '3031:3000'

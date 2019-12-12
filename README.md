@@ -7,6 +7,7 @@ This project is intended to give more features and make testing with Cypress eve
 * <a href="https://automationrhapsody.com/testing-with-cypress-basic-api-overview/">Testing with Cypress – Basic API overview</a>
 * <a href="https://automationrhapsody.com/testing-with-cypress-custom-logging-of-errors-and-junit-results/">Testing with Cypress – Custom logging of errors and JUnit results</a>
 * <a href="https://automationrhapsody.com/testing-with-cypress-code-coverage-with-istanbul/">Testing with Cypress – Code coverage with Istanbul</a>
+* <a href="https://automationrhapsody.com/dockerize-react-application-with-a-docker-multi-staged-build/">Dockerize React application with a Docker multi-staged build</a>
 
 ## Commands
 

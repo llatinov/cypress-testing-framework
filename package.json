@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-scripts build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "cypress:eslint": "eslint ./cypress",
@@ -30,7 +30,6 @@
   "bugs": {
     "url": "https://github.com/llatinov/cypress-testing-framework/issues"
   },
-  "homepage": "https://github.com/llatinov/cypress-testing-framework#readme",
   "eslintConfig": {
     "extends": "react-app"
   },
