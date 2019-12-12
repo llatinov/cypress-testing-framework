@@ -1,0 +1,20 @@
+# ========= BUILD =========
+FROM node:8.16.0-alpine as builder
+
+WORKDIR /app
+
+RUN npm install yarn -g
+
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install --production=true
+
+COPY . .
+
+RUN yarn build
+
+# ========= RUN =========
+FROM abiosoft/caddy:1.0.3
+
+COPY conf/Caddyfile /etc/Caddyfile
+COPY --from=builder /app/build /usr/share/caddy/html
