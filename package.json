@@ -56,7 +56,7 @@
   "devDependencies": {
     "cypress": "^3.8.3",
     "istanbul-instrumenter-loader": "^3.0.1",
-    "junit-report-merger": "^0.0.6",
+    "junit-report-merger": "^4.0.0",
     "react-app-rewired": "^2.1.5",
     "xml-js": "^1.6.11"
   }
